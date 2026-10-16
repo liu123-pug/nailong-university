@@ -1,0 +1,149 @@
+/* 奶龙大学 简约风格样式（中文页面） */
+:root{
+  --brand:#0b66c3; /* 靛蓝色高校风 */
+  --muted:#6b6b6b;
+  --max-width:1100px;
+  --radius:8px;
+  font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+  color-scheme: light;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:#fff;
+  color:#222;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container{
+  width:90%;
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:24px 0;
+}
+
+/* Header */
+.site-header{
+  border-bottom:1px solid #eee;
+  background:#fff;
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:12px 0;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.emblem{width:56px;height:56px}
+.logo-img{width:64px;height:64px}
+.logo-text h1{
+  margin:0;
+  font-size:20px;
+  color:var(--brand);
+}
+.logo-text .subtitle{
+  margin:0;
+  font-size:12px;
+  color:var(--muted);
+}
+
+/* Nav */
+.main-nav a{
+  margin-left:16px;
+  text-decoration:none;
+  color:#333;
+  padding:8px 10px;
+  border-radius:6px;
+  font-weight:600;
+}
+.main-nav a.active,
+.main-nav a:hover{
+  background:rgba(11,102,195,0.08);
+  color:var(--brand);
+}
+
+/* Hero / Banner */
+.hero{
+  padding:36px 0;
+}
+.banner{
+  background:linear-gradient(180deg, rgba(11,102,195,0.06), rgba(11,102,195,0.02));
+  border-bottom:1px solid rgba(11,102,195,0.06);
+  padding:48px 0;
+}
+.hero-inner{
+  display:flex;
+  align-items:center;
+  gap:32px;
+}
+.hero-left{flex:1}
+.hero-right{flex:1; text-align:right}
+.hero h2{
+  margin-top:0;
+  font-size:32px;
+  color:var(--brand);
+}
+.lead{font-size:16px;color:#444}
+.mascot{width:220px;max-width:80%}
+.mascot-large{width:320px}
+
+/* Buttons */
+.btn{
+  display:inline-block;
+  background:var(--brand);
+  color:#fff;
+  padding:10px 18px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:700;
+}
+
+/* News / Cards */
+.news-list{list-style:none;padding:0;margin:8px 0 0}
+.news-list li{padding:8px 0;border-bottom:1px dashed #eee;color:#333}
+
+.quick-links{display:flex;gap:16px;padding:24px 0}
+.card{
+  flex:1;
+  border:1px solid #f0f0f0;
+  padding:18px;
+  border-radius:8px;
+  background:#fff;
+  box-shadow:0 1px 3px rgba(0,0,0,0.03);
+}
+.card h4{margin:0 0 8px}
+.card a{color:var(--brand);font-weight:700;text-decoration:none}
+
+/* Departments */
+.dept-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:12px}
+.dept{border:1px solid #f2f2f2;padding:12px;border-radius:8px;background:#fafafa}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}
+.gallery img{width:100%;height:auto;border-radius:6px}
+.gallery figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+
+/* News page */
+.news-item{border-left:3px solid rgba(11,102,195,0.08);padding:12px 0;margin-bottom:20px}
+.news-item h3{margin:0 0 6px}
+.news-item .muted{color:var(--muted);font-size:13px;margin-bottom:8px}
+
+/* Footer */
+.site-footer{border-top:1px solid #eee;padding:18px 0;margin-top:30px;color:var(--muted)}
+.site-footer .small{font-size:12px;margin-top:8px}
+
+/* Responsive */
+@media (max-width:800px){
+  .hero-inner{flex-direction:column-reverse;text-align:center}
+  .hero-right{text-align:center}
+  .main-nav{display:flex;gap:8px;flex-wrap:wrap}
+  .emblem{display:none}
+}

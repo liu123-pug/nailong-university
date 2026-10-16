@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="奶龙大学校徽">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#0b66c3"/>
+      <stop offset="1" stop-color="#60a8e6"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="url(#g)"/>
+  <g transform="translate(0,6)" fill="#fff">
+    <path d="M60 32c-12 0-22 10-22 22s10 22 22 22 22-10 22-22-10-22-22-22zm0 6a16 16 0 1 1 0 32 16 16 0 0 1 0-32z"/>
+    <text x="60" y="96" font-size="10" font-family="Noto Sans SC,Microsoft Yahei" text-anchor="middle">奶龙大学</text>
+  </g>
+</svg>
